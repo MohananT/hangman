@@ -1,0 +1,36 @@
+.hangman-container {
+    /* display: flex;
+    justify-content: center; */
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.bottom-line {
+    height: 4px;
+    width: 250px;
+    background-color: #cdcdcd;
+}
+
+.horizontal {
+    height: 390px;
+    width: 4px;
+    margin-left: 120px;
+    background-color: #cdcdcd;
+}
+
+.top-line {
+    height: 4px;
+    width: 190px;
+    background-color: #cdcdcd;
+    margin-left: 120px;
+}
+
+.top-to-bottom {
+    height: 40px;
+    width: 4px;
+    background-color: #cdcdcd;
+    position: absolute;
+    top: 0px;
+    left: 310px;
+}

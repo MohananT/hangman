@@ -29,3 +29,11 @@
   transform: translateY(1px);
   box-shadow: 1px 1px 1px 1px #656565;
 }
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  gap: .50rem;
+  font-size: 3rem;
+  text-decoration: underline;
+}
