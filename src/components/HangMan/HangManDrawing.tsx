@@ -1,3 +1,4 @@
+import { useTextStore } from "../../store/store";
 import "./HangMan.css"
 
 const HEAD = (
@@ -80,9 +81,17 @@ const RIGHT_LEG = (
 const arr = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG]
 
 export default function HangManDrawing() {
+    const count = useTextStore(state => state.wrongCount)
+    const elements = [];
+    for (let i = 0; i < count; i++) {
+        elements.push(arr[i])
+    }
+    console.log(count)
     return (
         <div className="hangman-container">
-
+            {elements.map((item) => {
+                return item
+            })}
             <div className="top-to-bottom"></div>
             <div className="top-line"></div>
             <div className="horizontal"></div>

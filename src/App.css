@@ -35,5 +35,5 @@
   justify-content: center;
   gap: .50rem;
   font-size: 3rem;
-  text-decoration: underline;
+  text-transform: uppercase;
 }
