@@ -1,29 +1,34 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import './App.css'
-import HangManDrawing from './components/HangMan/HangManDrawing'
 import Keyboard from './components/Keyboard'
 import Text from './components/Text'
-import Laws from './components/Laws'
-import Clues from './components/Clues'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { HomeContainer } from "./container/HomeContainer"
+import PredictionContainer from './container/PredictionContainer'
+import ClueContainer from './container/ClueContainer'
+
+const queryClient = new QueryClient();
 
 function App() {
 
   return (
-    <>
-      <div className='container'>
-        <div className='item item-1'>
-          <Laws />
+    <QueryClientProvider client={queryClient}>
+      <>
+        <div className='container-root'>
+          <div className='item item-1'>
+            <PredictionContainer />
+          </div>
+          <div className='item item-2'>
+            <HomeContainer />
+            <Text />
+            <Keyboard />
+          </div>
+          <div className='item item-3'>
+            <ClueContainer />
+          </div>
         </div>
-        <div className='item item-2'>
-          <HangManDrawing />
-          <Text />
-          <Keyboard />
-        </div>
-        <div className='item item-3'>
-          <Clues />
-        </div>
-      </div>
-    </>
+      </>
+    </QueryClientProvider>
   )
 }
 

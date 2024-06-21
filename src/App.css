@@ -37,3 +37,11 @@
   font-size: 3rem;
   text-transform: uppercase;
 }
+
+.hangman-border {
+  border: #656565 0.1px solid;
+  border-radius: 10px;
+  height: 90vh;
+  margin: 20px;
+  padding: 20px;
+}

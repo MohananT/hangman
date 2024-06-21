@@ -39,7 +39,7 @@ export default function Keyboard() {
     return (
         <div className="keyboard">
             {keys.map((row, rowIndex) => (
-                <div key={rowIndex} className="keyboard-row">
+                <div key={rowIndex} className="keyboard-row text-red-600">
                     {row.map((item) => (
                         <div className="key" key={item} onClick={() => handleKey(item)}>{item}</div>
                     ))}
