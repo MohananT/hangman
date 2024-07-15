@@ -11,5 +11,6 @@ export const useTextStore = create((set) => {
         })),
         updateSource: (text: string) => set({ sourceText: text }),
         updateCount: () => set((state) => ({ wrongCount: state.wrongCount + 1 })),
+        setCounter: () => set({ wrongCount: 0 })
     }
 })

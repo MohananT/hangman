@@ -3,8 +3,8 @@ import "./HangMan.css"
 
 const HEAD = (
     <div style={{
-        height: "40px",
-        width: "40px",
+        height: "47px",
+        width: "45px",
         borderRadius: "100%",
         position: "absolute",
         top: "40px",
