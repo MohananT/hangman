@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query"
 import { fetchWordDesc } from "../utils/apis"
 import { useTextStore } from "../store/store";
-import { useState } from "react";
+// import { useState } from "react";
 import PartOfSpeech from "../components/PartOfSpeech";
 import Meaning from "../components/Meaning";
 

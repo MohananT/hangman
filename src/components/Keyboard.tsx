@@ -11,7 +11,7 @@ export default function Keyboard() {
         ['Z', 'X', 'C', 'V', 'B', 'N', 'M']
     ];
 
-    const updateAlg = (key) => {
+    const updateAlg = (key: string) => {
         if (text.includes(key)) {
             updateKey(key);
         } else {
@@ -25,7 +25,7 @@ export default function Keyboard() {
     }
 
     useEffect(() => {
-        const handleKeyPress = (event) => {
+        const handleKeyPress = (event: { key: string; }) => {
             console.log(event.key.toUpperCase())
             updateAlg(event.key.toUpperCase());
         }

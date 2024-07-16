@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 import HangManDrawing from "../components/HangMan/HangManDrawing";
 import useFileHook from "../hooks/useFileHook";
 import { useTextStore } from "../store/store";

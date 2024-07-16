@@ -1,7 +1,17 @@
 
 import { create } from 'zustand';
 
-export const useTextStore = create((set) => {
+interface userTextStore {
+    sourceText: string;
+    targetText: string[];
+    wrongCount: number;
+    updateTarget: (text: string) => void;
+    updateSource: (text: string) => void;
+    updateCount: () => void
+    setCounter: () => void
+}
+
+export const useTextStore = create<userTextStore>((set) => {
     return {
         sourceText: '',
         targetText: [],
